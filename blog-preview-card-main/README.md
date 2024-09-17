@@ -9,8 +9,8 @@ This is a solution to the [Blog Preview Card challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/punitkotian/Frontend-Mentor/tree/main/blog-preview-card-main)
+- [Live Site URL](https://66e9ad63c411032f517cd83a--brilliant-souffle-7de68d.netlify.app/)
 
 ### What I Learned
 
