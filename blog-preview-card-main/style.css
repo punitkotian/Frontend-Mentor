@@ -1,0 +1,115 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100dvh;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-container {
+    width: clamp(320px, 25vw, 400px);
+    padding: clamp(20px, 2vw, 22px);
+    border-radius: 16px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-950);
+    box-shadow: 6px 6px 0px var(--gray-950);
+}
+
+.article-container .article-image {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.article-container .article-image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.article-container .btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    background-color: var(--yellow);
+}
+
+.article-container .btn:hover ,
+.article-container .btn:focus {
+    color: var(--yellow);
+    background-color: var(--gray-950);
+}
+
+.article-container .article-date {
+    font-size: clamp(12px, 1.2vw, 14px);
+    color: var(--gray-950);
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.article-container a .article-title {
+    font-size: clamp(20px, 1.6vw, 24px);
+    margin: 16px 0px;
+    font-weight: 800;
+    color: var(--gray-950);
+}
+.article-container a .article-title:hover,
+.article-container a:focus .article-title {
+    color: var(--yellow);
+}
+
+.article-container .article-description {
+    color: var(--gray-500);
+    font-size: clamp(14px, 1.2vw, 16px);
+}
+
+.article-container .author-info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.article-container .author-info .author-image img{
+    width: 36px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.article-container .author-info .author-name {
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 600;
+}
+
+
