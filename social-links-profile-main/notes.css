@@ -1,0 +1,106 @@
+.my-element {
+    font-size: clamp(2rem, clac(1rem + 5vw), 10rem);
+}
+
+
+/* size and space scales */
+/**
+Step 0: 1rem
+Step 1: 1.25rem (1 * 1.25)
+Step 2: 1.56rem (1.25 * 1.25)
+Step 3: 1.95rem (1.56 * 1.25)
+Step 4: 2.43rem (1.95 * 1.25)
+
+ */
+body {
+    color: var(--color-dark);
+    background: var(--color-light);
+    font-size: var(size-step-1);
+    font-family:var(--font-base);
+    line-height: 1.4;
+    letter-spacing: var(--tracking);
+}
+
+h1, h2, h3 {
+    line-height: 1;
+    letter-spacing: var(--tracking-s);
+}
+
+h1 {
+    font-size: var(--size-step-5);
+}
+h2 {
+    font-size: var(--size-step-4);
+}
+h3 {
+    font-size: var(--size-step-3);
+}
+
+p, li, 
+blockquote:not([class]) {
+    max-width: 50ch;
+}
+
+h1, h2, h3 {
+    max-width: 20ch;
+}
+
+
+/* utilities */
+.mycontext {
+    --flow-space: 10rem;
+}
+
+.flow > * + * { 
+    /* 
+     * + * selects all siblings except the first one within .flow, 
+     because only elements that have a preceding sibling will be selected. 
+     So the first child is skipped.
+    */
+    margin-top: var(--flow-space, 1em);
+}
+
+.region {
+    padding-top: var(--region-space, var(--space-l-2xl));
+    padding-bottom: var(--region-space, var(--space-l-2xl));
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(
+        var(--grid-placement, auto-fill),
+        minmax(var(--grid-min-item-size, 16rem), 1fr)
+    );
+    gap: var(--gutter, var(--space-s-l));
+}
+
+.grid[data-layout="50-50"] {
+    --grid-placement: auto-fit;
+    --grid-min-item-size: clamp(16rem, 50vw, 26rem)
+}
+
+.grid[data-rows="masonry"] {
+    grid-template-rows: masonry;
+    align-items: start;
+}
+
+.features {
+    --grid-placement: auto-fit;
+    --grid-min-item-size: clamp(16rem, 33%, 20rem);
+    --gutter: var(--space-l-xl);
+    --flow-space: var(--space-s);
+
+    text-align: center;
+}
+
+[role="list"] {
+    padding: 0;
+}
+
+.card {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: var(--space-m-l);
+    border-radius: var(--border-radius);
+    max-width: unset;
+}
