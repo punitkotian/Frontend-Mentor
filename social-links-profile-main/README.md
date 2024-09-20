@@ -11,8 +11,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL: ](https://github.com/punitkotian/Frontend-Mentor/tree/main/social-links-profile-main)
+- [Live Site URL: ](https://66edb0e033a5bb2fea3d3816--cerulean-marzipan-a625f0.netlify.app/)
 
 
 ### Built with
@@ -32,11 +32,6 @@ Going forward, I want to focus more on making my designs work well on different 
 ### Useful resources
 
 - [Example resource 1](https://utopia.fyi/) - This resource helped me understand how to create fluid typography and spacing, which adjusts dynamically across different screen sizes.
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-
 
 ## Acknowledgments
 I’d like to thank Steven Stroud (@Stroudy) for recommending the use of semantic HTML and best practices. His advice on implementing BEM methodology was invaluable. He also shared great resources that helped me understand responsive design better.
